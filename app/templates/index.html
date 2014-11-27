@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="{{ url_for('static',filename='bootstrap.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static',filename='index.css') }}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div class="container">
+    <div class="page-header">
+        <h1>awesome-flask-todo</h1>
+    </div>
+    <div class="row">
+        <div class="col-lg-10">
+        {{ text }}
+        </div>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">Copyright © defshine 2014</p>
+    </div>
+</footer>
+</body>
+</html>
