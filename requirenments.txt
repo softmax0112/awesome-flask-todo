@@ -1,3 +1,5 @@
 Flask
 flask-mongoengine
 Flask-Script
+gunicorn
+greenlet
