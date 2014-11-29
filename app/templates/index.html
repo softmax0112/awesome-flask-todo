@@ -41,6 +41,7 @@
                             {% else %}
                                  <a href="/undone/{{ t.id }}" class="btn btn-primary">Undone</a>
                             {% endif %}
+                            <a href="/delete/{{ t.id }}" class="btn btn-danger">Delete</a>
                         </td>
                     </tr>
                 {% endfor %}
