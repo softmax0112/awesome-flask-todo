@@ -15,12 +15,17 @@
     <div class="row">
         <div class="col-lg-10">
 
-            <form class="input-group" action="/add" method="post">
-                <input class="form-control" id="content" name="content" type="text" value="">
+             <form class="input-group" action="/add" method="post">
+                {{ form.hidden_tag() }}
+                {{ form.content(class="form-control") }}
                 <span class="input-group-btn">
                     <button class="btn btn-primary" type="submit">Add</button>
                 </span>
             </form>
+            {% for error in form.errors.content %}
+                <div class="flash alert-danger"><span>{{ error }}</span></div>
+            {% endfor %}
+
             <h2>Todo List</h2>
             <table class="table">
                 <thead>
